@@ -4,6 +4,11 @@ body {
   padding-bottom: 20px;
 }
 
+#logo {
+    max-width: 50%
+    margin: 0 auto;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -75,10 +80,5 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
-  }
-  
-  img {
-    max-width: 50%
-    margin: 0 auto;
   }
 }
