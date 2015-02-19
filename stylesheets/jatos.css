@@ -4,6 +4,11 @@ body {
   padding-bottom: 20px;
 }
 
+#logo {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -34,7 +39,7 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+  
   }
 }
 .container-narrow > hr {
