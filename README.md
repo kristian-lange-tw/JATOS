@@ -1,6 +1,6 @@
 This is JATOS - Just Another Tool for Online Studies.
 
-[![Install on DigitalOcean](http://installer.71m.us/button.svg)](http://installer.71m.us/install?url=https://github.com/JATOS/JATOS/tree/do-button)
+[![Install on DigitalOcean](http://installer.71m.us/button.svg)](http://installer.71m.us/install?url=https://raw.githubusercontent.com/JATOS/JATOS/do-button)
 
 More information about JATOS: [www.jatos.org/Whats-JATOS.html](http://www.jatos.org/Whats-JATOS.html)
 
