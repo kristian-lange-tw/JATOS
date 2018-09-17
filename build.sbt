@@ -12,6 +12,8 @@ libraryDependencies ++= Seq(
   filters
 )
 
+resolvers += DefaultMavenRepository
+
 // Docker commands to run in Dockerfile
 dockerCommands := Seq(
   Cmd("FROM", "openjdk:8-jre"),

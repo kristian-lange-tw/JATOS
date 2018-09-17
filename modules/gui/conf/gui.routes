@@ -3,6 +3,17 @@
 # Order is important!
 # ~~~~
 
+#Auth
+GET         /                                 @controllers.gui.Auth.index()
+GET         /facebook/index.html              @controllers.gui.Auth.facebookIndex()
+GET         /facebookadmin/index.html         @controllers.gui.Auth.facebookAdminIndex()
+GET         /facebookcustom/index.html        @controllers.gui.Auth.facebookCustomIndex()
+GET         /facebook/notprotected.html       @controllers.gui.Auth.facebookNotProtectedIndex()
+GET         /callback                         @org.pac4j.play.CallbackController.callback()
+POST        /callback                         @org.pac4j.play.CallbackController.callback()
+GET         /logout                           @org.pac4j.play.LogoutController.logout()
+GET         /centralLogout                    @controllers.gui.CentralLogoutController.logout()
+
 # Tests controller
 GET      /jatos/test                                                        @controllers.gui.Tests.test()
 GET      /jatos/testDatabase                                                @controllers.gui.Tests.testDatabase()
