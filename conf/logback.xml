@@ -35,6 +35,8 @@
     <logger name="org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator"
             level="ERROR"/>
 
+    <logger name="org.pac4j.play" level="DEBUG" />
+    <logger name="org.pac4j.core.engine" level="DEBUG" />
     <logger name="play" level="INFO"/>
     <logger name="services" level="INFO"/>
     <logger name="batch" level="INFO"/>

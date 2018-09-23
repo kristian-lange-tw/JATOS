@@ -4,11 +4,11 @@
 # ~~~~
 
 #Auth
-GET         /                                 @controllers.gui.Auth.index()
-GET         /facebook/index.html              @controllers.gui.Auth.facebookIndex()
-GET         /facebookadmin/index.html         @controllers.gui.Auth.facebookAdminIndex()
-GET         /facebookcustom/index.html        @controllers.gui.Auth.facebookCustomIndex()
-GET         /facebook/notprotected.html       @controllers.gui.Auth.facebookNotProtectedIndex()
+GET         /pac4jAuth.html                   @controllers.gui.Pac4jAuth.index()
+GET         /facebook/index.html              @controllers.gui.Pac4jAuth.facebookIndex()
+GET         /facebookadmin/index.html         @controllers.gui.Pac4jAuth.facebookAdminIndex()
+GET         /facebookcustom/index.html        @controllers.gui.Pac4jAuth.facebookCustomIndex()
+GET         /oidc/index.html                  @controllers.gui.Pac4jAuth.oidcIndex()
 GET         /callback                         @org.pac4j.play.CallbackController.callback()
 POST        /callback                         @org.pac4j.play.CallbackController.callback()
 GET         /logout                           @org.pac4j.play.LogoutController.logout()

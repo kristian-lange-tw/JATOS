@@ -12,7 +12,6 @@ libraryDependencies ++= Seq(
   javaJdbc,
   javaJpa,
   javaWs,
-  cache,
   "org.webjars" % "bootstrap" % "3.3.4",
   "org.pac4j" % "play-pac4j" % "3.0.1",
   "org.pac4j" % "pac4j-http" % "2.0.0",
@@ -26,7 +25,10 @@ libraryDependencies ++= Seq(
   "org.pac4j" % "pac4j-ldap" % "2.0.0",
   "org.pac4j" % "pac4j-sql" % "2.0.0",
   "org.pac4j" % "pac4j-mongo" % "2.0.0",
-  "org.pac4j" % "pac4j-stormpath" % "2.0.0"
+  "org.pac4j" % "pac4j-stormpath" % "2.0.0",
+  "com.typesafe.play" % "play-cache_2.11" % "2.5.8",
+  "commons-io" % "commons-io" % "2.4",
+  "be.objectify" %% "deadbolt-java" % "2.5.1"
 )
 
 // Routes from submodules

@@ -1,13 +1,15 @@
 package general
 
 import javax.inject.Inject
-
-import play.api.http.DefaultHttpFilters
-import play.filters.headers.SecurityHeadersFilter
+import org.pac4j.play.filters.SecurityFilter
+import play.api.http.HttpFilters
 
 /**
   * Increases security
   * (https://www.playframework.com/documentation/2.5.x/SecurityHeaders)
   */
-class Filters @Inject() (securityHeadersFilter: SecurityHeadersFilter)
-  extends DefaultHttpFilters(securityHeadersFilter)
+class Filters @Inject()(securityFilter: SecurityFilter) extends HttpFilters {
+
+  def filters = Seq(securityFilter)
+
+}
